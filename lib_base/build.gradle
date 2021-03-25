@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+}
+apply from: "../baseBuildTypes.gradle"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    api rootProject.ext.dependencies["androidx_constraint"]
+
+    //Koin
+    api rootProject.ext.dependencies["androidx-koin-scope"]
+    api rootProject.ext.dependencies["androidx-koin-viewmodel"]
+    api rootProject.ext.dependencies["androidx-koin-ext"]
+    //OkHttp
+    api rootProject.ext.dependencies["okhttp3"]
+    // Retrofit
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofit-gson"]
+    //mmkv
+    api rootProject.ext.dependencies["tencent-mmkv"]
+    //logger
+    api rootProject.ext.dependencies["logger"]
+    // ktx
+    api rootProject.ext.dependencies["ktx_core"]
+    // ViewModel 拓展
+    api rootProject.ext.dependencies["jetpack_viewmodel-ktx"]
+    // LifeCycle 拓展
+    api rootProject.ext.dependencies["jetpack_lifecycle-ktx"]
+    // LiveData 拓展
+    api rootProject.ext.dependencies["jetpack_livedata-ktx"]
+    // 协程
+    api rootProject.ext.dependencies["coroutines"]
+    //room
+    api "androidx.room:room-runtime:2.2.6"
+    kapt "androidx.room:room-compiler:2.2.6"
+    api "androidx.room:room-ktx:2.2.6"
+    //动态权限 https://github.com/getActivity/XXPermissions
+    api 'com.hjq:xxpermissions:9.6'
+    //pop https://github.com/li-xiaojun/XPopup
+    api 'com.lxj:xpopup:2.1.12'
+    api rootProject.ext.dependencies["recyclerview-adapter"]
+    //SmartRefresh
+    api rootProject.ext.dependencies["smartRefresh"]
+    api rootProject.ext.dependencies["header-classics"]
+    api rootProject.ext.dependencies["footer-classics"]
+    api rootProject.ext.dependencies["header-radar"]
+    //数据table
+    api 'com.evrencoskun.library:tableview:0.8.9.2'
+    api rootProject.ext.dependencies["lottie"]
+    //glide
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["glideCompiler"]
+    // rx
+    api rootProject.ext.dependencies["rxandroid2"]
+    api rootProject.ext.dependencies["rxjava2"]
+    //FlycoTabLayout
+    api rootProject.ext.dependencies["flycoTabLayout"]
+    //MPAndroidChart XY轴设置文本, 高于3.0.3不支持
+    //api 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+}

@@ -1,2 +1,4 @@
+include ':lib_resource'
+include ':lib_base'
 include ':app'
 rootProject.name = "Template2021"

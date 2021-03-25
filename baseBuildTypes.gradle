@@ -1,0 +1,114 @@
+android {
+
+    //dex配置
+    dexOptions {
+        //是否支持大工程模式
+        jumboMode true
+        //dex
+        dexInProcess true
+        //预编译 拆分非常多dex
+        preDexLibraries true
+        //最大堆内存
+        javaMaxHeapSize "4g"
+        //最大线程
+        maxProcessCount 8
+        //annotation keep
+        keepRuntimeAnnotatedClasses false
+    }
+
+    //签名配置
+    signingConfigs {
+//        release {
+//            //key的位置
+//            storeFile file(STOREFILEPATH)
+//            //仓库密码
+//            storePassword STORE_PASSWORD
+//            //签名的别名
+//            keyAlias ALIAS
+//            //key的密码
+//            keyPassword ALIAS_PASSWORD
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+//
+//        releaseDebug {
+//            //key的位置
+//            storeFile file(STOREFILEPATH)
+//            //仓库密码
+//            storePassword STORE_PASSWORD
+//            //签名的别名
+//            keyAlias ALIAS
+//            //key的密码
+//            keyPassword ALIAS_PASSWORD
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+    }
+
+    //配置基础模块中的环境,参数配置
+    buildTypes {
+
+        release {
+            //线上环境
+            //是否混淆
+            minifyEnabled false
+            //移除无用的resource文件，此项只有在开启混淆时才生效
+            shrinkResources false
+            // 开启Zipalign优化
+            zipAlignEnabled false
+            buildConfigField "boolean", "IS_RELEASE", "true"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+            //consumerProguardFiles 'proguard-rules.pro'
+        }
+
+        releaseDebug {
+            //线上环境
+            debuggable true
+            //是否混淆
+            minifyEnabled false
+            //移除无用的resource文件，此项只有在开启混淆时才生效
+            shrinkResources false
+            // 开启Zipalign优化
+            zipAlignEnabled false
+            buildConfigField "boolean", "IS_RELEASE", "true"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+            //proguard-rules.pro独立混淆
+            //consumerProguardFiles 'proguard-rules.pro'
+        }
+
+        debug.initWith(buildTypes.debug)
+        debug {
+            //测试环境
+            //断点调试, true允许
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            buildConfigField "boolean", "IS_RELEASE", "false"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.release
+            //consumerProguardFiles 'proguard-rules.pro'
+        }
+
+        dev.initWith(buildTypes.debug)
+        dev {
+            //开发环境
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            buildConfigField "boolean", "IS_RELEASE", "false"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.debug
+            //consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    //渠道配置
+    //flavorDimensions "version"
+    productFlavors {
+
+    }
+}

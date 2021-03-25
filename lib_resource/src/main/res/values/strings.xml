@@ -1,0 +1,19 @@
+<resources>
+    <string name="exit_app_hint">再次返回退出</string>
+
+    <string name="tab_home_title">比赛</string>
+    <string name="tab_match_title">联赛</string>
+    <string name="tab_match_news">资讯</string>
+    <string name="tab_team_title">战队</string>
+    <string name="tab_mine_title">我的</string>
+
+    <string name="net_err">连接不到服务器</string>
+    <string name="net_failed">网络异常</string>
+    <string name="data_err">服务异常</string>
+    <string name="permission_failed01">获取权限失败</string>
+    <string name="permission_failed02">权限被永久拒绝，请手动授予</string>
+    <string name="permission_failed03">权限被拒，操作失败</string>
+    <string name="save_img_success">保存图片成功</string>
+    <string name="save_img_failed">图片保存失败</string>
+
+</resources>

@@ -1,0 +1,152 @@
+<resources>
+    <!-- 进度条弹窗主题 -->
+    <style name="app_progress_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 在输入框中的删除图标样式 -->
+    <style name="login_edittext_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp01</item>
+        <item name="android:layout_marginTop">@dimen/dp04</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="ti_calender_header" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="ti_calender_week" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="ti_calender_date" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="peoItemNameTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_ADADB4</item>
+        <item name="android:textSize">@dimen/sp10</item>
+    </style>
+
+    <style name="commonTextViewStyle_White10">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_white</item>
+        <item name="android:textSize">@dimen/sp10</item>
+    </style>
+
+    <style name="recordTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_ADADB4</item>
+        <item name="android:paddingLeft">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp10</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="peoProgressTextViewStyle_Blue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#88333333</item>
+        <item name="android:paddingRight">@dimen/dp07</item>
+        <item name="android:textSize">@dimen/sp11</item>
+    </style>
+
+    <style name="peoProgressTextViewStyle_Pink">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:paddingLeft">@dimen/dp07</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#88333333</item>
+        <item name="android:textSize">@dimen/sp11</item>
+    </style>
+
+    <style name="peoScoreTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:layout_marginTop">@dimen/dp06</item>
+        <item name="android:textSize">@dimen/sp11</item>
+    </style>
+
+    <!--输入框样式-->
+    <style name="editText_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:textColorHint">@color/c_999999</item>
+        <item name="android:paddingLeft">@dimen/dp25</item>
+        <item name="android:background">@color/c_trans</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/sp14</item>
+    </style>
+
+    <style name="dialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--没有标题-->
+        <item name="windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--dialog的整个屏幕的背景是否有遮障层-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--雷电图容器样式-->
+    <style name="team_data_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--雷电图标题样式-->
+    <style name="team_data_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_333333</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+    <!--雷电图数据或内容样式-->
+    <style name="team_data_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_999999</item>
+        <item name="android:layout_marginTop">@dimen/dp02</item>
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="setting_textView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp25</item>
+        <item name="android:layout_marginTop">@dimen/dp10</item>
+        <item name="android:layout_marginBottom">@dimen/dp10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/c_AAAAAA</item>
+        <item name="android:textSize">@dimen/sp11</item>
+    </style>
+
+    <style name="line_eeeeee_05">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5px</item>
+        <item name="android:background">@color/c_EEEEEE</item>
+    </style>
+</resources>
