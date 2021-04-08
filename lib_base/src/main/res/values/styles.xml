@@ -17,4 +17,22 @@
         <!--dialog的整个屏幕的背景是否有遮障层-->
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+    <style name="webViewPbStyle_Blue" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:max">100</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:progressDrawable">@drawable/comm_web_progress</item>
+    </style>
+    <declare-styleable name="CommonTitleView">
+        <attr name="isShowLeftIcon" format="boolean" />
+        <attr name="titleBackground" format="color" />
+        <attr name="centerTitle" format="string" />
+        <attr name="centerTextColor" format="color" />
+        <attr name="centerTextSize" format="float" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextSize" format="float" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="rightDrawable" format="reference" />
+    </declare-styleable>
 </resources>

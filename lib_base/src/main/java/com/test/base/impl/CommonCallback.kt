@@ -17,3 +17,19 @@ interface OnPermissionListener {
     fun onGranted()
     fun onDenied()
 }
+
+interface CommonTitleClick {
+    //两边按钮点击回调
+    fun onLeftClick()
+    fun onRightClick()
+}
+
+interface CommonTitleBackClick {
+    //返回按钮回调
+    fun onBackClick()
+}
+
+interface CommonTitleRightClick {
+    //点击右边按钮回调
+    fun onRightClick()
+}

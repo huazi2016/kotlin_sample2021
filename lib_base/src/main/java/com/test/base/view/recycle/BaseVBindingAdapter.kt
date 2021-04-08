@@ -1,0 +1,23 @@
+package com.test.base.view.recycle
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.viewbinding.ViewBinding
+import com.chad.library.adapter.base.BaseQuickAdapter
+
+/**
+ * author : huazi
+ * time   : 2021/3/26
+ * company：inkr
+ * desc   : viewBinding Adapter
+ */
+abstract class BaseVBindingAdapter<T, VB : ViewBinding>(data: MutableList<T>? = null)
+    : BaseQuickAdapter<T, VBindingViewHolder<VB>>(0, data) {
+
+    abstract fun createViewBinding(inflater: LayoutInflater, parent: ViewGroup): VB
+
+    override fun onCreateDefViewHolder(parent: ViewGroup, viewType: Int): VBindingViewHolder<VB> {
+        val viewBinding = createViewBinding(LayoutInflater.from(parent.context), parent)
+        return VBindingViewHolder(viewBinding, viewBinding.root)
+    }
+}

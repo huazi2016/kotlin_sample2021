@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">模板工程</string>
+    <string name="loading">努力加载中...</string>
 </resources>
