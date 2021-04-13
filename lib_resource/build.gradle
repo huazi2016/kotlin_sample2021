@@ -5,14 +5,14 @@ plugins {
 apply from: "../baseBuildTypes.gradle"
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion AndroidConfig.compileSdkVersion
+    buildToolsVersion AndroidConfig.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion AndroidConfig.defaultConfig.minSdkVersion
+        targetSdkVersion AndroidConfig.defaultConfig.targetSdkVersion
+        versionCode AndroidConfig.defaultConfig.versionCode
+        versionName AndroidConfig.defaultConfig.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"

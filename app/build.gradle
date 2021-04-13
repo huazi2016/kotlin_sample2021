@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion AndroidConfig.compileSdkVersion
+    buildToolsVersion AndroidConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.test.huazi"
-        minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        applicationId AndroidConfig.defaultConfig.applicationId
+        minSdkVersion AndroidConfig.defaultConfig.minSdkVersion
+        targetSdkVersion AndroidConfig.defaultConfig.targetSdkVersion
+        versionCode AndroidConfig.defaultConfig.versionCode
+        versionName AndroidConfig.defaultConfig.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         //分包

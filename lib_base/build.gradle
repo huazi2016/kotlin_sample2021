@@ -7,14 +7,14 @@ plugins {
 apply from: "../baseBuildTypes.gradle"
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion AndroidConfig.compileSdkVersion
+    buildToolsVersion AndroidConfig.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion AndroidConfig.defaultConfig.minSdkVersion
+        targetSdkVersion AndroidConfig.defaultConfig.targetSdkVersion
+        versionCode AndroidConfig.defaultConfig.versionCode
+        versionName AndroidConfig.defaultConfig.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -57,7 +57,7 @@ dependencies {
     api rootProject.ext.dependencies["coroutines"]
     //room
     api "androidx.room:room-runtime:2.2.6"
-    kapt "androidx.room:room-compiler:2.2.6"
+    kapt Libs.room_compiler
     api "androidx.room:room-ktx:2.2.6"
     //动态权限 https://github.com/getActivity/XXPermissions
     api 'com.hjq:xxpermissions:9.6'
@@ -79,7 +79,8 @@ dependencies {
     api rootProject.ext.dependencies["rxandroid2"]
     api rootProject.ext.dependencies["rxjava2"]
     //FlycoTabLayout
-    api rootProject.ext.dependencies["flycoTabLayout"]
+    //api rootProject.ext.dependencies["flycoTabLayout"]
+    api Libs.flycoTabLayout
     //MPAndroidChart XY轴设置文本, 高于3.0.3不支持
     //api 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }
