@@ -38,10 +38,25 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    defaultConfig {
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
+    }
+
+    //sourceSets {
+    //    main {
+    //        jniLibs.srcDirs = ['libs']
+    //    }
+    //    debug.setRoot('build-types/debug')
+    //    release.setRoot('build-types/release')
+    //}
 }
 
 dependencies {
-
+    //implementation fileTree(include: '*.jar', dir: 'libs')
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -54,4 +69,8 @@ dependencies {
     implementation rootProject.ext.dependencies["androidx_multidex"]
     implementation project(':lib_base')
     implementation project(':lib_resource')
+    implementation 'com.amap.api:3dmap:7.9.1'
+    //implementation 'com.amap.api:navi-3dmap:7.9.1'
+    implementation 'com.amap.api:location:5.3.1'
+    implementation 'com.amap.api:search:7.9.0'
 }

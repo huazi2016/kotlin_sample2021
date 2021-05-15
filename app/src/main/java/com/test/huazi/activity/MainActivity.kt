@@ -19,5 +19,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         binding.testTv.setOnClickListener {
             EmptyActivity.launchActivity(activity)
         }
+
+        binding.btnMap.setOnClickListener {
+            MapTestActivity.launchActivity(activity)
+        }
     }
 }

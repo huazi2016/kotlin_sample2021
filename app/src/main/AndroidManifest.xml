@@ -17,6 +17,7 @@
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:name=".activity.TestApp"
@@ -28,6 +29,11 @@
         android:usesCleartextTraffic="true"
         android:testOnly="false"
         android:theme="@style/TestAppTheme">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="eec66fba179dfb8d7f2f8e2e900b1cf5"/>
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +42,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.EmptyActivity"/>
+        <activity android:name=".activity.MapTestActivity"/>
     </application>
 
 </manifest>

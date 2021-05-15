@@ -9,7 +9,7 @@
     tools:context=".activity.MainActivity">
 
     <com.test.base.view.CommonTitleView
-        android:id="@+id/testTitleLayout"
+        android:id="@+id/emptyTitleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:centerTitle="自定义标题"
@@ -21,26 +21,23 @@
         app:rightTextColor="#FFEB3B"
         app:titleBackground="#29C6DA" />
 
-    <Button
-        android:id="@+id/testTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp20"
-        android:text="i an huazi"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/testRlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp15"
-        android:text="地图"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textColor="@color/c_333333" />
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
 
 </LinearLayout>
