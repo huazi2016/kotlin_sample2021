@@ -12,7 +12,7 @@
         android:id="@+id/emptyTitleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:centerTitle="RecycleView"
+        app:centerTitle="地图"
         app:isShowLeftIcon="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
