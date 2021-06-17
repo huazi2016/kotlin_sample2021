@@ -1,0 +1,4 @@
+<resources>
+    <string name="save_img_success">保存图片成功</string>
+    <string name="save_img_failed">图片保存失败</string>
+</resources>

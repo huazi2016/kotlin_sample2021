@@ -13,34 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:centerTitle="自定义标题"
-        app:isShowLeftIcon="true"
+        app:isShowLeftIcon="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:rightText="语音"
+        app:rightText=""
         app:rightTextColor="#FFEB3B"
         app:titleBackground="#29C6DA" />
 
-    <Button
-        android:id="@+id/testTv"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/testMainList"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp20"
-        android:text="i an huazi"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp15"
-        android:text="地图"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:itemCount="10"
+        tools:listitem="@layout/item_main_list" />
 
 </LinearLayout>

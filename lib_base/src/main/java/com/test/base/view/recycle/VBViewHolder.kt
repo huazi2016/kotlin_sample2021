@@ -10,4 +10,4 @@ import com.chad.library.adapter.base.viewholder.BaseViewHolder
  * company：inkr
  * desc   : viewBinding ViewHolder
  */
-class VBindingViewHolder<VB : ViewBinding>(val vb: VB, view: View) : BaseViewHolder(view)
+class VBViewHolder<VB : ViewBinding>(val binding: VB, view: View) : BaseViewHolder(view)

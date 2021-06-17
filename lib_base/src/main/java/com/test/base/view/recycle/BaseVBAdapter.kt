@@ -11,13 +11,13 @@ import com.chad.library.adapter.base.BaseQuickAdapter
  * company：inkr
  * desc   : viewBinding Adapter
  */
-abstract class BaseVBindingAdapter<T, VB : ViewBinding>(data: MutableList<T>? = null)
-    : BaseQuickAdapter<T, VBindingViewHolder<VB>>(0, data) {
+abstract class BaseVBAdapter<T, VB : ViewBinding>(data: MutableList<T>? = null)
+    : BaseQuickAdapter<T, VBViewHolder<VB>>(0, data) {
 
     abstract fun createViewBinding(inflater: LayoutInflater, parent: ViewGroup): VB
 
-    override fun onCreateDefViewHolder(parent: ViewGroup, viewType: Int): VBindingViewHolder<VB> {
+    override fun onCreateDefViewHolder(parent: ViewGroup, viewType: Int): VBViewHolder<VB> {
         val viewBinding = createViewBinding(LayoutInflater.from(parent.context), parent)
-        return VBindingViewHolder(viewBinding, viewBinding.root)
+        return VBViewHolder(viewBinding, viewBinding.root)
     }
 }

@@ -67,6 +67,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     // 分包
     implementation rootProject.ext.dependencies["androidx_multidex"]
+    implementation project(':module_test')
     implementation project(':lib_base')
     implementation project(':lib_resource')
     implementation 'com.amap.api:3dmap:7.9.1'
