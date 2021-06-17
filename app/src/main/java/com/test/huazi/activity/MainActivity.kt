@@ -11,6 +11,9 @@ import com.test.base.view.recycle.VBViewHolder
 import com.test.huazi.bo.MainItemBo
 import com.test.huazi.databinding.ActivityMainBinding
 import com.test.huazi.databinding.ItemMainListBinding
+import com.test.sample.activity.EmptyActivity
+import com.test.sample.activity.MapTestActivity
+import com.test.sample.activity.RecycleActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
@@ -42,7 +45,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         when (item.itemType) {
             1 -> {
                 //recycleView封装
-
+                RecycleActivity.launchActivity(activity)
             }
             2 -> {
                 //全局loading

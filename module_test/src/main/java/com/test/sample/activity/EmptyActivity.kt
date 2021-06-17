@@ -1,16 +1,13 @@
-package com.test.huazi.activity
+package com.test.sample.activity
 
 import android.content.Context
 import android.content.Intent
-import com.test.base.impl.CommonTitleBackClick
+import com.test.sample.R
 import com.test.base.impl.CommonTitleClick
 import com.test.base.utils.AppManager
-import com.test.base.utils.showToast
 import com.test.base.view.BaseActivity
 import com.test.base.view.loadview.LoadViewHelper
-import com.test.huazi.R
-import com.test.huazi.databinding.ActivityEmptyBinding
-import com.test.huazi.databinding.ActivityMainBinding
+import com.test.sample.databinding.ActivityEmptyBinding
 
 class EmptyActivity : BaseActivity<ActivityEmptyBinding>() {
 

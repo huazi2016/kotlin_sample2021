@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context="activity.EmptyActivity">
 
     <com.test.base.view.CommonTitleView
         android:id="@+id/emptyTitleLayout"
@@ -30,13 +30,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="测试"
-            android:textColor="@color/c_333333" />
-
-        <com.amap.api.maps.MapView
-            android:id="@+id/mapView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_centerInParent="true"
+            android:text="empty" />
 
     </RelativeLayout>
 

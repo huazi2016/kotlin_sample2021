@@ -1,4 +1,4 @@
-package com.test.huazi.activity
+package com.test.sample.activity
 
 import android.content.Context
 import android.content.Intent
@@ -16,8 +16,8 @@ import com.test.base.impl.CommonTitleClick
 import com.test.base.utils.AppManager
 import com.test.base.utils.showToast
 import com.test.base.view.BaseActivity
-import com.test.huazi.R
-import com.test.huazi.databinding.ActivityMapBinding
+import com.test.sample.R
+import com.test.sample.databinding.ActivityMapBinding
 
 
 class MapTestActivity : BaseActivity<ActivityMapBinding>() {
@@ -67,7 +67,7 @@ class MapTestActivity : BaseActivity<ActivityMapBinding>() {
                 .position(convertToLatLng(mStartPoint))
                 .title("背景")
                 .snippet("我要触发了")
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.pic_fire))
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.pic_bg_sign))
         )//.isDraggable = true
         map.addMarker(
             MarkerOptions()

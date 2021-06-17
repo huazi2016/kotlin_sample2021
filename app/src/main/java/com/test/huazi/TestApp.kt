@@ -1,4 +1,4 @@
-package com.test.huazi.activity
+package com.test.huazi
 
 import androidx.multidex.BuildConfig
 import androidx.multidex.MultiDexApplication

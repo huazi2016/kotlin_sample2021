@@ -70,8 +70,4 @@ dependencies {
     implementation project(':module_test')
     implementation project(':lib_base')
     implementation project(':lib_resource')
-    implementation 'com.amap.api:3dmap:7.9.1'
-    //implementation 'com.amap.api:navi-3dmap:7.9.1'
-    implementation 'com.amap.api:location:5.3.1'
-    implementation 'com.amap.api:search:7.9.0'
 }
