@@ -18,8 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rightText="语音"
-        app:rightTextColor="#FFEB3B"
-        app:titleBackground="#29C6DA" />
+        app:titleBackground="@color/colorPrimaryDark" />
 
     <RelativeLayout
         android:id="@+id/testRlLayout"

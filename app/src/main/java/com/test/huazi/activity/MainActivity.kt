@@ -4,10 +4,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.test.base.impl.CommonTitleBackClick
+import com.test.base.utils.ResourceUtil
+import com.test.base.utils.StatusBarUtil
 import com.test.base.utils.showToast
 import com.test.base.view.BaseActivity
 import com.test.base.view.recycle.BaseVBAdapter
 import com.test.base.view.recycle.VBViewHolder
+import com.test.huazi.R
 import com.test.huazi.bo.MainItemBo
 import com.test.huazi.databinding.ActivityMainBinding
 import com.test.huazi.databinding.ItemMainListBinding
@@ -20,6 +23,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun getViewBinding() = ActivityMainBinding.inflate(layoutInflater)
 
     override fun initView() {
+        StatusBarUtil.immersive(this.window, ResourceUtil.getColor(R.color.colorPrimaryDark), 1f)
         binding.testTitleLayout.setTitle("首页")
         binding.testTitleLayout.setOnTitleBackClick(object : CommonTitleBackClick {
             override fun onBackClick() {

@@ -12,14 +12,13 @@
         android:id="@+id/emptyTitleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:centerTitle="自定义标题"
+        app:centerTitle="RecycleView"
         app:isShowLeftIcon="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rightText="语音"
-        app:rightTextColor="#FFEB3B"
-        app:titleBackground="#29C6DA" />
+        app:titleBackground="@color/colorPrimaryDark" />
 
     <RelativeLayout
         android:id="@+id/testRlLayout"

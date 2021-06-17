@@ -8,9 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseBinderAdapter
 import com.chad.library.adapter.base.binder.QuickViewBindingItemBinder
 import com.test.base.utils.AppManager
+import com.test.base.utils.ResourceUtil
+import com.test.base.utils.StatusBarUtil
 import com.test.base.view.BaseActivity
 import com.test.base.view.recycle.BaseVBAdapter
 import com.test.base.view.recycle.VBViewHolder
+import com.test.sample.R
 import com.test.sample.bo.RecycleBo01
 import com.test.sample.bo.RecycleBo02
 import com.test.sample.bo.RecycleBo03
@@ -34,7 +37,7 @@ class RecycleActivity : BaseActivity<ActivityRecycleBinding>() {
     override fun getViewBinding() = ActivityRecycleBinding.inflate(layoutInflater)
 
     override fun initView() {
-
+        StatusBarUtil.immersive(this.window, ResourceUtil.getColor(R.color.colorPrimaryDark), 1f)
         adapter.addItemBinder(RecycleBo01::class.java, TestAdapter02(), null)
         adapter.addItemBinder(RecycleBo02::class.java, TestAdapter03(), null)
         adapter.addItemBinder(RecycleBo03::class.java, TestAdapter04(), null)

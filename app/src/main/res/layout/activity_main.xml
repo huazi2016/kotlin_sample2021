@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:rightText=""
         app:rightTextColor="#FFEB3B"
-        app:titleBackground="#29C6DA" />
+        app:titleBackground="@color/colorPrimaryDark" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/testMainList"

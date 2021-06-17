@@ -14,6 +14,8 @@ import com.amap.api.services.route.RouteSearch.FromAndTo
 import com.amap.api.services.route.RouteSearch.RideRouteQuery
 import com.test.base.impl.CommonTitleClick
 import com.test.base.utils.AppManager
+import com.test.base.utils.ResourceUtil
+import com.test.base.utils.StatusBarUtil
 import com.test.base.utils.showToast
 import com.test.base.view.BaseActivity
 import com.test.sample.R
@@ -41,6 +43,7 @@ class MapTestActivity : BaseActivity<ActivityMapBinding>() {
     }
 
     override fun initView() {
+        StatusBarUtil.immersive(this.window, ResourceUtil.getColor(R.color.colorPrimaryDark), 1f)
         binding.emptyTitleLayout.setTitle("地图")
         //val loadView = LoadViewHelper(binding.testRlLayout)
         //loadView.showPbLoading(R.string.loading)

@@ -8,6 +8,17 @@
     android:orientation="vertical"
     tools:context=".activity.RecycleActivity">
 
+    <com.test.base.view.CommonTitleView
+        android:id="@+id/testTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:centerTitle="自定义标题"
+        app:isShowLeftIcon="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleBackground="@color/colorPrimaryDark" />
+
     <com.scwang.smart.refresh.layout.SmartRefreshLayout
         android:id="@+id/testRefresh"
         android:layout_width="match_parent"
