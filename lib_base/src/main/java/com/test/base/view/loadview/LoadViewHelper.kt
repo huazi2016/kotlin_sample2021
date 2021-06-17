@@ -20,7 +20,6 @@ import java.lang.ref.WeakReference
 /**
  * author : huazi
  * time   : 2021/3/26
- * company：inkr
  * desc   : loadView调用类
  */
 class LoadViewHelper(view: View?) {

@@ -6,7 +6,6 @@ import android.view.View
 /**
  * author : huazi
  * time   : 2021/3/26
- * company：inkr
  * desc   : 动态loading视图接口类
  */
 interface IVaryViewHelper {

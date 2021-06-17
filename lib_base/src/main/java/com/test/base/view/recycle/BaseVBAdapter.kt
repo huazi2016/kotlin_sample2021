@@ -8,7 +8,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter
 /**
  * author : huazi
  * time   : 2021/3/26
- * company：inkr
  * desc   : viewBinding Adapter
  */
 abstract class BaseVBAdapter<T, VB : ViewBinding>(data: MutableList<T>? = null)

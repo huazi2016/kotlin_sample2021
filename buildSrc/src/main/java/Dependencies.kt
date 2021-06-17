@@ -1,7 +1,6 @@
 /**
  * author : huazi
  * time   : 2021/4/13
- * company：inkr
  * desc   :
  */
 object Versions {

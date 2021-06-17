@@ -20,7 +20,6 @@ import com.test.base.utils.setViewVisible
 /**
  * author : huazi
  * time   : 2021/4/7
- * company：inkr
  * desc   : 公共标题栏封装
  */
 class CommonTitleView @JvmOverloads constructor(

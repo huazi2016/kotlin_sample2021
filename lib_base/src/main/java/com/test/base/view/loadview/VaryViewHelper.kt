@@ -11,7 +11,6 @@ import com.test.base.utils.setViewVisible
 /**
  * author : huazi
  * time   : 2021/3/26
- * company：inkr
  * desc   : 动态loading视图帮助类
  */
 class VaryViewHelper(view: View?) : IVaryViewHelper {
